@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 20px;
+}
+
+ol, ul {
+	padding-left: 30px;
+}
+
+.board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.status {
+	margin-bottom: 10px;
+}
+
+.square {
+	background: lightgrey;
+	border: 1px solid #999;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	width: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 15px;
+	text-align: center;	  
+}
+
+.square.dark {
+	background: black;
+	color: white;
+}
+
+.square:focus {
+	outline: none;
+}
+
+.kbd-navigation .square:focus {
+	background: #ddd;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-info {
+	margin-left: 20px;
+	width: 150px;
+}
+
+.container{
+	display: block;
+	width: 200px;			
+	height: 100%;
+}
+
+.container .box{
+	display: inline;
+	float: left;
+	width: 20px;
+	border: 1px solid;
+	padding: 10px;
+}
+#pop{
+		font-size: 32px;
+		border-radius: 50%;
+		padding: 20px;
+		background: darkgreen;
+		width: 100px;
+		text-align: center;
+		line-height: 3;
+		font-weight: bold;
+		color:#FFF;
+		cursor: pointer;
+}
+.hide{
+	display: none;
+}
+.game-current-number>div{	
+	font-size:80px;
+	border-radius:50%;
+	padding:20px;
+	background:black;
+	color:#FFF;
+	width:100px;
+	text-align: center;
+	margin-left:20px;		
+}
+.btn{
+	padding: 10px 20px;		
+	border-radius: 3px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.btn.startButton{		
+	background: darkgreen;
+	color: white;    		
+}
+.btn.stopButton{		
+	background: darkred;
+	color: white;    			
+}
+.timer_buttons span{
+	display: block;
+	text-align:center;
+	margin:15px;
+}
+.timer{
+	font-size:28px;
+}	
+.timer_buttons img{
+	width:150px;
+}
