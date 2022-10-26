@@ -273,7 +273,7 @@ class Housie extends React.Component {
 						<span className="btn stopButton" onClick={this.stopButtonClick}>Stop</span>
 						<span className="btn startButton" onClick={this.restartGame}>Restart</span>
 						<span className="timer">Timer: {this.state.time}</span>
-						<img alt='Please Wait...' className={this.state.time > 0 ? '' : 'hide'} src="https://loading.io/spinners/microsoft/lg.rotating-balls-spinner.gif" />
+						<img alt='Please Wait...' className={this.state.time > 0 ? '' : 'hide'} src="https://i.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.webp" />
 					</div>
 					
 					<div><div className="" id='pop' onClick={this.handleClick} >POP</div></div>
